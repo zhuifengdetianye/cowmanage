@@ -1,9 +1,9 @@
-var express = require('express')
-var fortune = require('./lib/fortune')
-var app = express()
+const express = require('express')
+const fortune = require('./lib/fortune')
+const app = express()
 
 //设置handlebars的视图引擎
-var handlebars = require('express3-handlebars')
+const handlebars = require('express3-handlebars')
         .create({defaultLayout:'main'})
 app.engine('handlebars', handlebars.engine)
 app.set('view engine', 'handlebars')
